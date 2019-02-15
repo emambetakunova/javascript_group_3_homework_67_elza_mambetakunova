@@ -8,7 +8,7 @@ class DoorCodeInterface extends Component {
     render() {
         return (
             <div className="DoorCodeInterface">
-                <input className={this.props.isCorrect} defaultValue={this.props.str}/>
+                <input className={this.props.isCorrect} defaultValue={this.props.str} disabled />
                 <div className='Buttons'>
                     <button onClick={this.props.addNumber}>9</button>
                     <button onClick={this.props.addNumber}>8</button>
