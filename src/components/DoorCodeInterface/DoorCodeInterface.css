@@ -1,0 +1,29 @@
+.DoorCodeInterface {
+    display: flex;
+    flex-direction: column;
+    width: 238px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.DoorCodeInterface input {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 40px;
+    width: 193px;
+    height: 60px;
+}
+
+.Buttons button {
+    margin: 3px;
+    width: 60px;
+    height: 60px;
+}
+
+.success {
+   color: #299a0b;
+}
+
+.error {
+    color: #ff3019;
+}
