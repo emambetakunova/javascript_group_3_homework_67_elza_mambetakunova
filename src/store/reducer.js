@@ -23,12 +23,10 @@ const reducer = (state = initialState, action) => {
             return {...state, pinCode: state.pinCode + action.number, str: state.str + '*'};
 
         case REMOVE:
-            const newCode = state.pinCode.substr(0, state.pinCode.length - 1);
             const str = state.str.substr(0, state.str.length - 1);
             return {
                 ...state,
-                pinCode: newCode,
-                str
+                pinCode: str
             };
         case ENTER:
             if (state.actualPinCode === state.pinCode) return {...state, isCorrect: 'success', str: 'Access Granted!'};
